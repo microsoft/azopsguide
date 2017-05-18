@@ -1,35 +1,35 @@
 # Monitoring and Management on Microsoft Azure
-–{ƒy[ƒW‚Å‚Í Microsoft Azure ã‚Å‰^—pŠÇ—‚ÌƒmƒEƒnƒE‚ðÐ‰î‚µ‚Ü‚·B
+æœ¬ãƒšãƒ¼ã‚¸ã§ã¯ Microsoft Azure ä¸Šã§é‹ç”¨ç®¡ç†ã®ãƒŽã‚¦ãƒã‚¦ã‚’ç´¹ä»‹ã—ã¾ã™ã€‚
 
-## ƒAƒNƒZƒX§ŒäƒZƒLƒ…ƒŠƒeƒB
+## ã‚¢ã‚¯ã‚»ã‚¹åˆ¶å¾¡ã‚»ã‚­ãƒ¥ãƒªãƒ†ã‚£
 
-## ‰Â—p«ÝŒv‚ÆÐŠQ‘Îô
+## å¯ç”¨æ€§è¨­è¨ˆã¨ç½å®³å¯¾ç­–
 
-## ‰Û‹à‚ÆƒTƒuƒXƒNƒŠƒvƒVƒ‡ƒ“
+## èª²é‡‘ã¨ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³
 
-## ŠÄŽ‹‚ÆƒCƒ“ƒVƒfƒ“ƒgŠÇ—
+## ç›£è¦–ã¨ã‚¤ãƒ³ã‚·ãƒ‡ãƒ³ãƒˆç®¡ç†
 
-## \¬ŠÇ—‚ÆŽ©“®‰»
-- WebƒT[ƒrƒX‚ÌHTTPŠÄŽ‹‚ð‚µ‚½‚¢
-- VM‚Ì¶Ž€ŠÄŽ‹‚ð‚µ‚½‚¢
-- CPU‚ÌŠÄŽ‹‚ð‚µ‚½‚¢
-- MEM‚ÌŠÄŽ‹‚ð‚µ‚½‚¢
-- Disk—e—Ê‚ÌŠÄŽ‹‚ð‚µ‚½‚¢
-- ƒŠ[ƒWƒ‡ƒ“/DC‚ðŠÄŽ‹‚µ‚½‚¢
-- Žg‚Á‚Ä‚¢‚éAzure ƒT[ƒrƒX‚ÌŠÄŽ‹‚ð‚µ‚½‚¢
-- ƒlƒbƒgƒ[ƒNƒgƒ‰ƒtƒBƒbƒNi—˜—p‘Ñˆæj‚ðŠÄŽ‹‚µ‚½‚¢
-- OS‚ª•W€‚Åo‚·ƒƒO‚ðŠÄŽ‹‚µ‚½‚¢
-- ƒJƒXƒ^ƒ}ƒCƒY‚µ‚½ƒƒO‚ðŠÄŽ‹‚µ‚½‚¢
-- ƒƒO‚©‚ç“Á’¥‚Ì‚ ‚éƒL[ƒ[ƒh‚ðŠÄŽ‹‚µ‚½‚¢
-- ƒ}ƒ‹ƒEƒFƒA‚ÌŠ´õ‚ðŠÄŽ‹‚µ‚½‚¢
-- DoS/DDoSUŒ‚‚ÌŠÄŽ‹‚ð‚µ‚½‚¢
-- SQLƒCƒ“ƒWƒFƒNƒVƒ‡ƒ“‚âƒNƒƒXƒTƒCƒgƒXƒNƒŠƒvƒeƒBƒ“ƒO‚ÌŠÄŽ‹‚ð‚µ‚½‚¢
-- Microsoft Azure‚É‰e‹¿‚·‚éƒƒ“ƒeƒiƒ“ƒX‚ðŠÄŽ‹‚µ‚½‚¢
-- Azure‚Ì\¬•ÏX‚ðŠÄŽ‹‚µ‚½‚¢
-- NSG‚Ìƒgƒ‰ƒtƒBƒbƒNƒƒO‚ð•ªÍ‚µ‚½‚¢
-- ŠÄŽ‹ƒT[ƒrƒX‚ð’ñ‹Ÿ‚·‚éƒp[ƒgƒi[‚ð’m‚è‚½‚¢
-- 3rd paty‚ðŽg‚Á‚½Ž–—á‚ª’m‚è‚½‚¢
--- [Microsoft Azure ã‚ÅçŽè‚ð—˜—p](CMandDeploy/3rd-party-senju/README.md)
+## æ§‹æˆç®¡ç†ã¨è‡ªå‹•åŒ–
+- Webã‚µãƒ¼ãƒ“ã‚¹ã®HTTPç›£è¦–ã‚’ã—ãŸã„
+- VMã®ç”Ÿæ­»ç›£è¦–ã‚’ã—ãŸã„
+- CPUã®ç›£è¦–ã‚’ã—ãŸã„
+- MEMã®ç›£è¦–ã‚’ã—ãŸã„
+- Diskå®¹é‡ã®ç›£è¦–ã‚’ã—ãŸã„
+- ãƒªãƒ¼ã‚¸ãƒ§ãƒ³/DCã‚’ç›£è¦–ã—ãŸã„
+- ä½¿ã£ã¦ã„ã‚‹Azure ã‚µãƒ¼ãƒ“ã‚¹ã®ç›£è¦–ã‚’ã—ãŸã„
+- ãƒãƒƒãƒˆãƒ¯ãƒ¼ã‚¯ãƒˆãƒ©ãƒ•ã‚£ãƒƒã‚¯ï¼ˆåˆ©ç”¨å¸¯åŸŸï¼‰ã‚’ç›£è¦–ã—ãŸã„
+- OSãŒæ¨™æº–ã§å‡ºã™ãƒ­ã‚°ã‚’ç›£è¦–ã—ãŸã„
+- ã‚«ã‚¹ã‚¿ãƒžã‚¤ã‚ºã—ãŸãƒ­ã‚°ã‚’ç›£è¦–ã—ãŸã„
+- ãƒ­ã‚°ã‹ã‚‰ç‰¹å¾´ã®ã‚ã‚‹ã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰ã‚’ç›£è¦–ã—ãŸã„
+- ãƒžãƒ«ã‚¦ã‚§ã‚¢ã®æ„ŸæŸ“ã‚’ç›£è¦–ã—ãŸã„
+- DoS/DDoSæ”»æ’ƒã®ç›£è¦–ã‚’ã—ãŸã„
+- SQLã‚¤ãƒ³ã‚¸ã‚§ã‚¯ã‚·ãƒ§ãƒ³ã‚„ã‚¯ãƒ­ã‚¹ã‚µã‚¤ãƒˆã‚¹ã‚¯ãƒªãƒ—ãƒ†ã‚£ãƒ³ã‚°ã®ç›£è¦–ã‚’ã—ãŸã„
+- Microsoft Azureã«å½±éŸ¿ã™ã‚‹ãƒ¡ãƒ³ãƒ†ãƒŠãƒ³ã‚¹ã‚’ç›£è¦–ã—ãŸã„
+- Azureã®æ§‹æˆå¤‰æ›´ã‚’ç›£è¦–ã—ãŸã„
+- NSGã®ãƒˆãƒ©ãƒ•ã‚£ãƒƒã‚¯ãƒ­ã‚°ã‚’åˆ†æžã—ãŸã„
+- ç›£è¦–ã‚µãƒ¼ãƒ“ã‚¹ã‚’æä¾›ã™ã‚‹ãƒ‘ãƒ¼ãƒˆãƒŠãƒ¼ã‚’çŸ¥ã‚ŠãŸã„
+- 3rd patyã‚’ä½¿ã£ãŸäº‹ä¾‹ãŒçŸ¥ã‚ŠãŸã„
+  - [Microsoft Azure ä¸Šã§åƒæ‰‹ã‚’åˆ©ç”¨](CMandDeploy/3rd-party-senju/README.md)
 
 ## Contributing
 
