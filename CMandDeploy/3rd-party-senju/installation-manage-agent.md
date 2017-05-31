@@ -93,16 +93,10 @@ https://docs.com/isami-daichi-1/5452/sqlserver2016-windowsserver2016-20170213 �
 
 以上で Microsoft Azure 上でのリソース配置は完了です。次節からは千手の具体的なインストール手順となります。
 
-## hosts ファイルの編集
+## 千手エージェントをインストールする仮想マシンの設定
+以下からは千手エージェントをインストールする仮想マシンの設定です。千手エージェントのインストールを行います。
 
-
-```
-SenjuMGWinVM	172.19.0.10	# Senju Manager
-SenjuAgentWinVM	172.19.1.10	# Senju Agent
-```
-
-
-## 千手エージェントのインストール
+### 千手エージェントのインストール
 まず、監視対象となる Windows Server 2012 R2 に千手エージェントのインストールを行います。こちらの内容について、詳細な手順は以下のマニュアルに記載されています。ここでは簡易的な内容を紹介いたします。
 5.2. Windows版千手エージェント Senju DevOperation Conductor Document Disk/doc/install_guide/05.html#windows
 
@@ -132,7 +126,19 @@ Senju DevOperation Conductor Disk\windows.agt\package\senju_agt-1600-00-windows-
 後はインストール先の指定がありますが、特に変更する必要はないのでウィザード通りにセットアップを完了してください。
 
 
-## 千手マネージャのインストール
+## 千手マネージャ・千手ブラウザをインストールする仮想マシンの設定
+以下からは千手マネージャ・千手ブラウザをインストールする仮想マシンの設定です。hosts ファイルの設定、千手マネージャのインストール、千手ブラウザのインストールを行います。
+
+### hosts ファイルの編集
+千手マネージャをインストールする仮想マシンの hosts ファイルに対し、名前解決できるように以下の様な記載を追記してください。IP アドレスは自身で設定したものを利用してください。
+
+```
+SenjuMGWinVM	172.19.0.10	# Senju Manager
+SenjuAgentWinVM	172.19.1.10	# Senju Agent
+```
+
+
+### 千手マネージャのインストール
 次に Windows 版の千手マネージャをインストールします。こちらの詳細な手順は以下のマニュアルに記載がありますので、簡易的な内容だけ記載します。
 4.2. Windows版千手マネージャ Senju DevOperation Conductor Document Disk\doc\install_guide\04.html#windows
 
@@ -158,7 +164,7 @@ Senju DevOperation Conductor Disk\windows.mgr\package\senju_mgr-1600-00-windows-
 後はインストール先の指定がありますが、特に変更する必要はないのでウィザード通りにセットアップを完了してください。通常はラインセス登録を行う必要がありますが、今回はトライアルとしてセットアップを完了します。
 
 
-## 千手ブラウザのインストール
+### 千手ブラウザのインストール
 
 次に 千手ブラウザをインストールします。まず、Windows 向けのバイナリとして提供されている以下のファイルを利用します（細かなファイル名は千手のリリース時期によって変わる場合があります）。
 
@@ -171,7 +177,7 @@ Senju DevOperation Conductor Disk\windows.brw\package\senju_brw-1600-00-windows-
 その後、インストール先フォルダ、コンポーネントの選択等を行いますが、既定の値のままセットアップを実施します。
 
 
-## 千手ブラウザでの監視ノードの追加
+### 千手ブラウザでの監視ノードの追加
 千手ブラウザを利用し、千手マネージャから監視する千手エージェントを追加する設定を行います。こちらの手順は以下に詳細な記載があるので、本節では簡易的な手順を紹介します。
 2.3.1.4. 管理対象ノードの登録と削除 Senju DevOperation Conductor Document Disk/doc/users_guide/02_3.html#id12
 
