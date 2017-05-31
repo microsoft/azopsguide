@@ -4,8 +4,6 @@
 
 ![成果物構成](output-structure.png "成果物構成")
 
-本記事で利用するプロダクトも含む「Senju Family」は 株式会社 野村総合研究所の提供する製品です。正式にサポートされる構成、手順は別途 野村総合研究所 様へ問い合わせを行ってください。
-
 ## Microsoft Azure のリソース作成
 千手マネージャ、千手ブラウザ、千手エージェントをインストールするための事前準備として、仮想ネットワークと仮想マシン（Windows Server 2012 R2）×2 を作成します。
 
@@ -104,12 +102,12 @@ SenjuAgentWinVM	172.19.1.10	# Senju Agent
 ```
 
 
-## 千手マネージャのインストール
+## 千手エージェントのインストール
 まず、監視対象となる Windows Server 2012 R2 に千手エージェントのインストールを行います。こちらの内容について、詳細な手順は以下のマニュアルに記載されています。ここでは簡易的な内容を紹介いたします。
-4.2. Windows版千手マネージャ Senju DevOperation Conductor Document Disk\doc\install_guide\04.html#windows
+5.2. Windows版千手エージェント Senju DevOperation Conductor Document Disk/doc/install_guide/05.html#windows
 
 まず、Windows 向けのバイナリとして提供されている以下のファイルを利用します（細かなファイル名は千手のリリース時期によって変わる場合があります）。
-Senju DevOperation Conductor Disk\windows.mgr\package\senju_mgr-1600-00-windows-x86-20160527.exe
+Senju DevOperation Conductor Disk\windows.agt\package\senju_agt-1600-00-windows-x86-20160708.exe
 
 こちらを監視対象の仮想マシンにリモートデスクトップを利用したクリップボードコピー等で配置し、当該仮想マシン上でインストーラを実行します。利用する言語を選択画面が起動するので、今回は「日本語」を選択します。
 
@@ -134,12 +132,12 @@ Senju DevOperation Conductor Disk\windows.mgr\package\senju_mgr-1600-00-windows-
 後はインストール先の指定がありますが、特に変更する必要はないのでウィザード通りにセットアップを完了してください。
 
 
-## 千手エージェントのインストール
-次に Windows 版の千手エージェントをインストールします。こちらの詳細な手順は以下のマニュアルに記載がありますので、簡易的な内容だけ記載します。
-5.2. Windows版千手エージェント Senju DevOperation Conductor Document Disk/doc/install_guide/05.html#windows
+## 千手マネージャのインストール
+次に Windows 版の千手マネージャをインストールします。こちらの詳細な手順は以下のマニュアルに記載がありますので、簡易的な内容だけ記載します。
+4.2. Windows版千手マネージャ Senju DevOperation Conductor Document Disk\doc\install_guide\04.html#windows
 
 まず、Windows 向けのバイナリとして提供されている以下のファイルを利用します（細かなファイル名は千手のリリース時期によって変わる場合があります）。
-Senju DevOperation Conductor Disk\windows.agt\package\senju_agt-1600-00-windows-x86-20160708.exe
+Senju DevOperation Conductor Disk\windows.mgr\package\senju_mgr-1600-00-windows-x86-20160527.exe
 
 こちらを千手マネージャをインストールする仮想マシンにリモートデスクトップを利用したクリップボードコピー等で配置し、当該仮想マシン上でインストーラを実行します。利用する言語を選択画面が起動するので、今回は「日本語」を選択します。
 
@@ -194,6 +192,8 @@ Senju DevOperation Conductor Disk\windows.brw\package\senju_brw-1600-00-windows-
 ![千手ブラウザでノードセットアップ04](senju-browser-node-setup-04.png "千手ブラウザでノードセットアップ04")
 
 監視ノードを追加後、千手ブラウザの左メニューから "ドメイン名" を右クリックし、メニューから「反映（ノード定義）」を実行してください。正常にコマンドが実行されれば、以下の様に「ノード状態（千手）」の値が「正常」になります。
+
+![千手ブラウザでノードセットアップ05](senju-browser-node-setup-05.png "千手ブラウザでノードセットアップ05")
 
 以上でセットアップは完了です。
 
