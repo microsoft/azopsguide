@@ -14,7 +14,7 @@
 | - | - | - | - | - | - | - |
 | senju-vnet | 127.19.0.0/16（アドレス空間が 65536 アドレスなら任意で問題ない） | SENJU-SUBNET| 172.19.0.0/24 | （自サブスクリプション） | senju-dev-rg（新規で作成） | 東日本（任意） |
 
-![仮想ネットワーク作成](create-vnet.png "仮想ネットワーク作成")
+![仮想ネットワーク作成](media/installation-manage-agent/create-vnet.png "仮想ネットワーク作成")
 
 次に、作成した仮想ネットワークにサブネットを追加で作成します。管理ポータルから、作成した仮想ネットワークを選択し、「サブネット」メニューを選び「+サブネット」を押下し、以下のパラメータを入力して設定を保存します。
 
@@ -22,7 +22,7 @@
 | - | - | - | - | 
 | AP-SUBNET | 172.19.1.0/24 | なし | なし |
 
-![サブネット追加](add-subnet.png "サブネット追加")
+![サブネット追加](media/installation-manage-agent/add-subnet.png "サブネット追加")
 
 上記を実施することで、千手マネージャ向けの Windows Server 2012 R2、千手エージェント向けの Windows Server 2012 R2 をデプロイする環境が完了しました。
 
@@ -33,11 +33,11 @@
 | - | - | - | - | - | - | - | - |
 | SenjuMGWinVM | SSD | azureuser | （任意） | （任意） | （自サブスクリプション） | senju-dev-rg（既存のものを使用） | 東日本（任意） |
 
-![仮想マシン-基本](vm1-basic-setting.png "仮想マシン-基本")
+![仮想マシン-基本](media/installation-manage-agent/vm1-basic-setting.png "仮想マシン-基本")
 
 次に「サイズ」では以下の様に DS1_V2 を選択します。インスタンスサイズは必要に応じて変更してください。
 
-![仮想マシン-サイズ](vm1-size-setting.png "仮想マシン-サイズ")
+![仮想マシン-サイズ](media/installation-manage-agent/vm1-size-setting.png "仮想マシン-サイズ")
 
 次に「設定」では以下の情報を入力します。
 
@@ -55,11 +55,11 @@
 | - | - | - | - | - | - | - | - |
 | SenjuAgentWinVM | SSD | azureuser | （任意） | （任意） | （自サブスクリプション） | senju-dev-rg（既存のものを使用） | 東日本（任意） |
 
-![仮想マシン-基本](vm2-basic-setting.png "仮想マシン-基本")
+![仮想マシン-基本](media/installation-manage-agent/vm2-basic-setting.png "仮想マシン-基本")
 
 次に「サイズ」では以下の様に DS1_V2 を選択します。インスタンスサイズは必要に応じて変更してください。
 
-![仮想マシン-サイズ](vm2-size-setting.png "仮想マシン-サイズ")
+![仮想マシン-サイズ](media/installation-manage-agent/vm2-size-setting.png "仮想マシン-サイズ")
 
 次に「設定」では以下の情報を入力します。
 
@@ -82,7 +82,7 @@ https://docs.com/isami-daichi-1/5452/sqlserver2016-windowsserver2016-20170213 �
 当該仮想マシンのネットワークインターフェースを選択して「IP 構成」から以下の画面を参考に静的なプライベート IP を設定してください。Microsoft Azure の仮想マシンに関する IP アドレス割り振りに関しては [Azure の仮想マシンとIPアドレス](https://blogs.technet.microsoft.com/mskk-cloudos/2016/04/06/azure-ip/ "Azure の仮想マシンとIPアドレス") を参照ください。
 
 
-![プライベートIPアドレスの設定](private-ip-setting.png "プライベートIPアドレスの設定")
+![プライベートIPアドレスの設定](media/installation-manage-agent/private-ip-setting.png "プライベートIPアドレスの設定")
 
 今回のサンプルでは以下の様に IP アドレスを割り振っています。
 
@@ -111,23 +111,23 @@ Senju DevOperation Conductor Disk\windows.agt\package\senju_agt-1600-00-windows-
 
 こちらを監視対象の仮想マシンにリモートデスクトップを利用したクリップボードコピー等で配置し、当該仮想マシン上でインストーラを実行します。利用する言語を選択画面が起動するので、今回は「日本語」を選択します。
 
-![千手エージェントセットアップ01](senju-agent-setup-01.png "千手エージェントセットアップ01")
+![千手エージェントセットアップ01](media/installation-manage-agent/senju-agent-setup-01.png "千手エージェントセットアップ01")
 
 次に、セットアップに必要な再配布パッケージのインストールが求められるので、こちらも「はい」を押下します。
 
-![千手エージェントセットアップ02](senju-agent-setup-02.png "千手エージェントセットアップ02")
+![千手エージェントセットアップ02](media/installation-manage-agent/senju-agent-setup-02.png "千手エージェントセットアップ02")
 
 セットアップウィザードの開始ダイアログは「次へ」を押すだけで問題ありませんが、以下の千手サービスアカウントに今回は「ローカルシステムアカウント（LocalSystem）」を選択します。Active Directory をインストール済の Windows Server が存在する場合等は、別途アーキテクチャを検討してください。
 
-![千手エージェントセットアップ03](senju-agent-setup-03.png "千手エージェントセットアップ03")
+![千手エージェントセットアップ03](media/installation-manage-agent/senju-agent-setup-03.png "千手エージェントセットアップ03")
 
 さらに、ここで千手のノードIDと千手ロングホスト名を入力します。今回は単純にコンピュータ名をそのまま以下の様に付与します。
 
-![千手エージェントセットアップ04](senju-agent-setup-04.png "千手エージェントセットアップ04")
+![千手エージェントセットアップ04](media/installation-manage-agent/senju-agent-setup-04.png "千手エージェントセットアップ04")
 
 次に、監視元の千手ドメイン名を記載します。こちらは後程の「千手マネージャ」のインストール時に別途指定しますが、ここでまず以下の様に「SenjuMGWinVM」を入力してください。
 
-![千手エージェントセットアップ05](senju-agent-setup-05.png "千手エージェントセットアップ05")
+![千手エージェントセットアップ05](media/installation-manage-agent/senju-agent-setup-05.png "千手エージェントセットアップ05")
 
 後はインストール先の指定がありますが、特に変更する必要はないのでウィザード通りにセットアップを完了してください。
 
@@ -141,19 +141,19 @@ Senju DevOperation Conductor Disk\windows.mgr\package\senju_mgr-1600-00-windows-
 
 こちらを千手マネージャをインストールする仮想マシンにリモートデスクトップを利用したクリップボードコピー等で配置し、当該仮想マシン上でインストーラを実行します。利用する言語を選択画面が起動するので、今回は「日本語」を選択します。
 
-![千手マネージャセットアップ01](senju-manager-setup-01.png "千手マネージャセットアップ01")
+![千手マネージャセットアップ01](media/installation-manage-agent/senju-manager-setup-01.png "千手マネージャセットアップ01")
 
 セットアップに必要な再配布パッケージのインストールが求められるので、こちらも「はい」を押下します。
 
-![千手マネージャセットアップ02](senju-manager-setup-02.png "千手マネージャセットアップ02")
+![千手マネージャセットアップ02](media/installation-manage-agent/senju-manager-setup-02.png "千手マネージャセットアップ02")
 
 千手マネージャを動作させるローカルアカウントを作成します。今回は senju/（任意） でアカウントを作成します。
 
-![千手マネージャセットアップ03](senju-manager-setup-03.png "千手マネージャセットアップ03")
+![千手マネージャセットアップ03](media/installation-manage-agent/senju-manager-setup-03.png "千手マネージャセットアップ03")
 
 千手マネージャが管理する千手ドメインを作成します。千手エージェントセットアップ時に指定した「SenjuMGWinVM」を指定してください。
 
-![千手マネージャセットアップ04](senju-manager-setup-04.png "千手マネージャセットアップ04")
+![千手マネージャセットアップ04](media/installation-manage-agent/senju-manager-setup-04.png "千手マネージャセットアップ04")
 
 後はインストール先の指定がありますが、特に変更する必要はないのでウィザード通りにセットアップを完了してください。通常はラインセス登録を行う必要がありますが、今回はトライアルとしてセットアップを完了します。
 
@@ -166,7 +166,7 @@ Senju DevOperation Conductor Disk\windows.brw\package\senju_brw-1600-00-windows-
 
 こちらを千手ブラウザをインストールする仮想マシン（千手マネージャをインストールした仮想マシンになります）にリモートデスクトップを利用したクリップボードコピー等で配置し、当該仮想マシン上でインストーラを実行します。利用する言語を選択画面が起動するので、今回は「日本語」を選択します。
 
-![千手ブラウザセットアップ01](senju-browser-setup-01.png "千手ブラウザセットアップ01")
+![千手ブラウザセットアップ01](media/installation-manage-agent/senju-browser-setup-01.png "千手ブラウザセットアップ01")
 
 その後、インストール先フォルダ、コンポーネントの選択等を行いますが、既定の値のままセットアップを実施します。
 
@@ -177,23 +177,23 @@ Senju DevOperation Conductor Disk\windows.brw\package\senju_brw-1600-00-windows-
 
 まず、千手マネージャ、千手ブラウザをインストールした仮想マシンでメニューより「Senju Browser(日本語)」を選択し、千手ブラウザを以下の様に起動してください。起動後、ドメイン名には「SenjuMGWinVM」を入力し、ユーザ名・パスワードはマニュアルを参照して入力してください。
 
-![千手ブラウザでノードセットアップ01](senju-browser-node-setup-01.png "千手ブラウザでノードセットアップ01")
+![千手ブラウザでノードセットアップ01](media/installation-manage-agent/senju-browser-node-setup-01.png "千手ブラウザでノードセットアップ01")
 
 ログイン後、以下の様な千手ブラウザのアプリケーションが起動します。
 
-![千手ブラウザでノードセットアップ02](senju-browser-node-setup-02.png "千手ブラウザでノードセットアップ02")
+![千手ブラウザでノードセットアップ02](media/installation-manage-agent/senju-browser-node-setup-02.png "千手ブラウザでノードセットアップ02")
 
 千手ブラウザの左メニューから "ドメイン名" - ノードグループ - 全体 を選択後、以下の画面を参考に右側のウィンドウで右クリックを押下して 新規作成 - 千手エージェント を選択します。
 
-![千手ブラウザでノードセットアップ03](senju-browser-node-setup-03.png "千手ブラウザでノードセットアップ03")
+![千手ブラウザでノードセットアップ03](media/installation-manage-agent/senju-browser-node-setup-03.png "千手ブラウザでノードセットアップ03")
 
 以下のダイアログが起動するので、千手エージェントをインストールした仮想マシンの情報を入力します。「千手エージェント（Windows）」を選択し、ノードID、ロングホスト名はセットアップ時の値を入力してください。
 
-![千手ブラウザでノードセットアップ04](senju-browser-node-setup-04.png "千手ブラウザでノードセットアップ04")
+![千手ブラウザでノードセットアップ04](media/installation-manage-agent/senju-browser-node-setup-04.png "千手ブラウザでノードセットアップ04")
 
 監視ノードを追加後、千手ブラウザの左メニューから "ドメイン名" を右クリックし、メニューから「反映（ノード定義）」を実行してください。正常にコマンドが実行されれば、以下の様に「ノード状態（千手）」の値が「正常」になります。
 
-![千手ブラウザでノードセットアップ05](senju-browser-node-setup-05.png "千手ブラウザでノードセットアップ05")
+![千手ブラウザでノードセットアップ05](media/installation-manage-agent/senju-browser-node-setup-05.png "千手ブラウザでノードセットアップ05")
 
 以上でセットアップは完了です。
 
