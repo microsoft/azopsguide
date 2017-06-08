@@ -20,8 +20,7 @@
 - ネットワークトラフィック（利用帯域）を監視したい
 - OSが標準で出すログを監視したい
 - カスタマイズしたログを監視したい
-- ログから特徴のあるキーワードを監視したい
-  - [OMS LogAnalyticsを使った特定ログの監視](CMandDeploy/SpecificAlert/Linux/README.md)
+- [ログから特徴のあるキーワードを監視したい](CMandDeploy/SpecificAlert/README.md)
 - マルウェアの感染を監視したい
 - DoS/DDoS攻撃の監視をしたい
 - SQLインジェクションやクロスサイトスクリプティングの監視をしたい
