@@ -8,8 +8,6 @@
 ## 課金とサブスクリプション
 
 ## 監視とインシデント管理
-
-## 構成管理と自動化
 - WebサービスのHTTP監視をしたい
 - VMの生死監視をしたい
 - CPUの監視をしたい
@@ -30,6 +28,8 @@
 - 監視サービスを提供するパートナーを知りたい
 - 3rd patyを使った事例が知りたい
   - [Microsoft Azure 上で千手を利用](CMandDeploy/3rd-party-senju/README.md)
+
+## 構成管理と自動化
 
 ## Contributing
 
