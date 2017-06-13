@@ -13,7 +13,7 @@
 - CPUの監視をしたい
 - MEMの監視をしたい
 - [Disk容量の監視をしたい](CMandDeploy/DiskUsage/README.md)
-- リージョン/DCを監視したい
+- [リージョン/DCを監視したい](CMandDeploy/Region-DC/README.md)
 - 使っているAzure サービスの監視をしたい
 - ネットワークトラフィック（利用帯域）を監視したい
 - OSが標準で出すログを監視したい
