@@ -20,7 +20,7 @@
 - [カスタマイズしたログを監視したい](CMandDeploy/CustomLog/README.md)
 - [ログから特徴のあるキーワードを監視したい](CMandDeploy/SpecificAlert/README.md)
 - [マルウェアの感染を監視したい](CMandDeploy/AntiMalware/README.md)
-- DoS/DDoS攻撃の監視をしたい
+- [DoS/DDoS攻撃の監視をしたい](CMandDeploy/DoS-DDoS/README.md)
 - SQLインジェクションやクロスサイトスクリプティングの監視をしたい
 - Microsoft Azureに影響するメンテナンスを監視したい
 - Azureの構成変更を監視したい
