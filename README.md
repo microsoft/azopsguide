@@ -15,7 +15,7 @@
 - [Disk容量の監視をしたい](CMandDeploy/DiskUsage/README.md)
 - [リージョン/DCを監視したい](CMandDeploy/Region-DC/README.md)
 - [使っているAzure サービスの監視をしたい](CMandDeploy/AzureService/README.md)
-- ネットワークトラフィック（利用帯域）を監視したい
+- [ネットワークトラフィック（利用帯域）を監視したい](CMandDeploy/NetworkTraffic/README.md)
 - [OSが標準で出すログを監視したい](CMandDeploy/OSLog/README.md)
 - [カスタマイズしたログを監視したい](CMandDeploy/CustomLog/README.md)
 - [ログから特徴のあるキーワードを監視したい](CMandDeploy/SpecificAlert/README.md)
