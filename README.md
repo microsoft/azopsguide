@@ -21,7 +21,7 @@
 - [ログから特徴のあるキーワードを監視したい](CMandDeploy/SpecificAlert/README.md)
 - [マルウェアの感染を監視したい](CMandDeploy/AntiMalware/README.md)
 - [DoS/DDoS攻撃の監視をしたい](CMandDeploy/DoS-DDoS/README.md)
-- SQLインジェクションやクロスサイトスクリプティングの監視をしたい
+- [SQLインジェクションやクロスサイトスクリプティングの監視をしたい](CMandDeploy/SQLin-Cross/README.md)
 - Microsoft Azureに影響するメンテナンスを監視したい
 - Azureの構成変更を監視したい
 - NSGのトラフィックログを分析したい
