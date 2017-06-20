@@ -23,8 +23,8 @@
 - [DoS/DDoS攻撃の監視をしたい](CMandDeploy/DoS-DDoS/README.md)
 - [SQLインジェクションやクロスサイトスクリプティングの監視をしたい](CMandDeploy/SQLin-Cross/README.md)
 - [Microsoft Azureに影響するメンテナンスを監視したい](CMandDeploy/Maintenance/README.md)
-- Azureの構成変更を監視したい
-- NSGのトラフィックログを分析したい
+- [Azureの構成変更を監視したい](CMandDeploy/ChangeArchitect/README.md)
+- [NSGのトラフィックログを分析したい](CMandDeploy/Nsg-Perform/README.md)
 - 監視サービスを提供するパートナーを知りたい
 - 3rd patyを使った事例が知りたい
   - [Microsoft Azure 上で千手を利用](CMandDeploy/3rd-party-senju/README.md)
