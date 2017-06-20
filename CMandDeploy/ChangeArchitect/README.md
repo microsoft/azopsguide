@@ -11,7 +11,7 @@ Microsoft Azureの仮想マシンを作成する際、vNETやPublicIP、可用�
 
 ## 参考となるサイト
 
-### OMS Log Analyticsについて
+### Azure構成変更の監視について
 Azure Monitor の概要  
 https://docs.microsoft.com/ja-jp/azure/monitoring-and-diagnostics/monitoring-overview-azure-monitor
 
