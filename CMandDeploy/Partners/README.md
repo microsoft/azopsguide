@@ -21,7 +21,7 @@ http://jp.fujitsu.com/solutions/cloud/iaas/azure/
 日本ビジネスシステムズ Microsoft Azureソリューション  
 https://www.jbs.co.jp/solution/list/windowsazuresolution
 
-SoftBank Technology Microsoft Azureマネージドサービス 
+SoftBank Technology Microsoft Azureマネージドサービス   
 https://www.softbanktech.jp/service/list/azure-managed-service/
 
 FiXER  
