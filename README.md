@@ -25,7 +25,7 @@
 - [Microsoft Azureに影響するメンテナンスを監視したい](CMandDeploy/Maintenance/README.md)
 - [Azureの構成変更を監視したい](CMandDeploy/ChangeArchitect/README.md)
 - [NSGのトラフィックログを分析したい](CMandDeploy/Nsg-Perform/README.md)
-- 監視サービスを提供するパートナーを知りたい
+- [監視サービスを提供するパートナーを知りたい](CMandDeploy/Partners/README.md)
 - 3rd patyを使った事例が知りたい
   - [Microsoft Azure 上で千手を利用](CMandDeploy/3rd-party-senju/README.md)
 
